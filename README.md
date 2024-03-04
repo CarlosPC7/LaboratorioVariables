@@ -1,7 +1,7 @@
 # Grupos musicales
 
 ## Interface
-Creamos una interface llamada grupo músical, para asignar un tipo de valor a cada variable que posteriormente necesitamos usar para crear los grupos.
+Creamos una interface llamada grupo musical, para asignar un tipo de valor a cada variable que posteriormente necesitamos usar para crear los grupos.
 
 ![alt text](image-1.png)
 
