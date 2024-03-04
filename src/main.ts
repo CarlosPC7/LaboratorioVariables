@@ -1,63 +1,74 @@
-interface Grupomusical {
-    Nombregrupo: string;
-    Añofundación: number;
-    Activo: boolean;
-    Géneromusical: string;
-};
+interface grupoMusical {
+  nombreGrupo: string;
+  yearFundacion: number;
+  activo: boolean;
+  generoMusical: string;
+}
 
 const poprock = "🎵 Pop Rock";
-const  rock ="🎸 Rock";
+const rock = "🎸 Rock";
+const hardrock = "🤘 Hard Rock";
+const clasica = "🎼 Clásica";
 
-const Grupo1: Grupomusical = {
-    Nombregrupo: "The Beatles",
-    Añofundación: 1960,
-    Activo: true,
-    Géneromusical: "🎵 Pop Rock",
-};
-const estiloTítulo = "color:green; font-size:16px; font-style: bold;";
-console.log(`%c ${Grupo1.Nombregrupo}`,estiloTítulo,
-    `El año de fundación es ${Grupo1.Añofundación}
-    sigue activo ${Grupo1.Activo}
-    y pertenece al grupo musical ${poprock}
-    `,
-    );
+const estiloTitulo = "color:green; font-size:16px; font-style: bold;";
 
-const Grupo2: Grupomusical = {
-    Nombregrupo: "Queen",
-    Añofundación: 1970,
-    Activo: false,
-    Géneromusical: "🎸 Rock",
+const Grupo1: grupoMusical = {
+  nombreGrupo: "The Beatles",
+  yearFundacion: 1960,
+  activo: true,
+  generoMusical: "🎵 Pop Rock",
 };
 
-Grupo1.Nombregrupo = "%cQueen", estiloTítulo;
-console.log(Grupo2);
+console.log(
+  `%c ${Grupo1.nombreGrupo}`, estiloTitulo,
+  `El año de su fundación es ${Grupo1.yearFundacion}, es ${Grupo1.activo} que sigue activo y pertenece al género musical ${poprock}`
+);
 
-const Grupo3: Grupomusical = {
-    Nombregrupo: "AC DC",
-    Añofundación: 1973,
-    Activo: true,
-    Géneromusical: "🤘 Hard Rock",
+
+const Grupo2: grupoMusical = {
+  nombreGrupo: "Queen",
+  yearFundacion: 1970,
+  activo: false,
+  generoMusical: "🎸 Rock",
 };
 
-Grupo1.Nombregrupo = "%cAC DC", estiloTítulo;
-console.log(Grupo3);
+console.log(
+    `%c ${Grupo2.nombreGrupo}`,estiloTitulo,
+    `El año de su fundación es ${Grupo2.yearFundacion}, es ${Grupo2.activo} que sigue activo, y su género musical es ${Grupo2.generoMusical}`
+);
 
-const Grupo4: Grupomusical = {
-    Nombregrupo: "Ludwig van Beethoven",
-    Añofundación: 1770,
-    Activo: false,
-    Géneromusical: "🎼 Clásica",
+const Grupo3: grupoMusical = {
+  nombreGrupo: "AC DC",
+  yearFundacion: 1973,
+  activo: true,
+  generoMusical: "🤘 Hard Rock",
 };
 
-Grupo1.Nombregrupo = "%cLudwig van Beethoven", estiloTítulo;
-console.log(Grupo4);
+console.log(
+    `%c ${Grupo3.nombreGrupo}`,estiloTitulo,
+    `El año de su fundación es ${Grupo3.yearFundacion}, es ${Grupo3.activo} que sigue activo, y su género musical es ${Grupo3.generoMusical}`
+);
 
-const Grupo5: Grupomusical = {
-    Nombregrupo: "The Rolling Stones",
-    Añofundación: 1962,
-    Activo: true,
-    Géneromusical: "🎸 Rock",
+const Grupo4: grupoMusical = {
+  nombreGrupo: "Ludwig van Beethoven",
+  yearFundacion: 1770,
+  activo: false,
+  generoMusical: "🎼 Clásica",
 };
 
-Grupo1.Nombregrupo = "%cThe Rolling Stones", estiloTítulo;
-console.log(Grupo5);
+console.log(
+    `%c ${Grupo4.nombreGrupo}`,estiloTitulo,
+    `El año de su fundación es ${Grupo4.yearFundacion}, es ${Grupo4.activo} que sigue activo, y su género musical es ${Grupo4.generoMusical}`
+);
+
+const Grupo5: grupoMusical = {
+  nombreGrupo: "The Rolling Stones",
+  yearFundacion: 1962,
+  activo: true,
+  generoMusical: "🎸 Rock",
+};
+
+console.log(
+    `%c ${Grupo5.nombreGrupo}`,estiloTitulo,
+    `El año de su fundación es ${Grupo5.yearFundacion}, es ${Grupo5.activo} que sigue activo, y su género musical es ${Grupo5.generoMusical}`
+);
