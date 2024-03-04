@@ -5,6 +5,9 @@ interface Grupomusical {
     Géneromusical: string;
 };
 
+const poprock = "🎵 Pop Rock";
+const  rock ="🎸 Rock";
+
 const Grupo1: Grupomusical = {
     Nombregrupo: "The Beatles",
     Añofundación: 1960,
@@ -12,8 +15,12 @@ const Grupo1: Grupomusical = {
     Géneromusical: "🎵 Pop Rock",
 };
 const estiloTítulo = "color:green; font-size:16px; font-style: bold;";
-Grupo1.Nombregrupo = "%cThe Beatles", estiloTítulo;
-console.log(Grupo1);
+console.log(`%c ${Grupo1.Nombregrupo}`,estiloTítulo,
+    `El año de fundación es ${Grupo1.Añofundación}
+    sigue activo ${Grupo1.Activo}
+    y pertenece al grupo musical ${poprock}
+    `,
+    );
 
 const Grupo2: Grupomusical = {
     Nombregrupo: "Queen",
