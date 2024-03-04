@@ -1,11 +1,37 @@
-# typescript-sandbox
+# Grupos musicales
 
-Para la parte de cada módulo en la que te planteamos ejercicios con JavaScript puedes usar este sandbox.
+## Interface
+Creamos una interface llamada grupo músical, para asignar un tipo de valor a cada variable que posteriormente necesitamos usar para crear los grupos.
 
-Pasos:
+![alt text](image-1.png)
 
-- Clonate el proyecto.
-- Instala las dependencias con `npm install`.
-- Ejecuta el sandbox con `npm run dev`.
-- Abre el navegador en `http://localhost:5173/` (si ese puerto no te funciona, mira en la consola donde has hecho el build, puede que este ocupado y se haya abierto en otro puerto).
-- Puedes empezar a meter tu código en el fichero:
+## Creamos variables
+Con "cons" creamos variables para los géneros musicales así como el estilo del título.
+
+![alt text](image-2.png)
+
+## Creamos los grupos
+Empezamos a crear los grupos individuales, y los ponemos a ejecutar en la consola con console.log
+
+### Grupo 1
+
+![alt text](image-3.png)
+
+### Grupo 2
+
+![alt text](image-4.png)
+
+### Grupo 3
+
+![alt text](image-5.png)
+
+### Grupo 4
+
+![alt text](image-6.png)
+
+### Grupo 5
+
+![alt text](image-7.png)
+
+# Resultado final
+![alt text](image.png)
